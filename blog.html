@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wine Blog - Red Wine Guide</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .form-container, .post-card {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      margin-top: 0;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .form-container button {
+      background-color: #7e1e2b;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #922b3e;
+    }
+
+    .post-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .comment-section {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      border-left: 2px solid #ddd;
+    }
+
+    .comment-section p {
+      margin: 0.5rem 0;
+    }
+
+    .rating {
+      color: #e1b000;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wine Blog</h1>
+    <p>Share and discover wine experiences 🍷</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="types.html">Types</a>
+    <a href="pairings.html">Pairings</a>
+    <a href="countries.html">Countries</a>
+    <a href="basics.html">Basics</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <!-- 📤 Blog Submission Form -->
+  <div class="form-container">
+    <h2>Post a Wine Review</h2>
+    <form>
+      <input type="text" placeholder="Wine Name" required />
+      <input type="text" placeholder="Region / Country" required />
+      <input type="file" accept="image/*" />
+      <textarea rows="5" placeholder="Your review..." required></textarea>
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option>⭐</option>
+        <option>⭐⭐</option>
+        <option>⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐⭐</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- 🧾 Example Wine Post -->
+  <div class="post-card">
+    <h3>Cabernet Sauvignon - Napa Valley</h3>
+    <img src="https://images.unsplash.com/photo-1607093800858-1a44a3e4a109?auto=format&fit=crop&w=800&q=80" alt="Wine bottle" />
+    <p><strong>Review:</strong> Full-bodied with rich blackberry notes, smooth tannins, and a hint of vanilla. Perfect with grilled steak.</p>
+    <p class="rating">Rating: ⭐⭐⭐⭐</p>
+
+    <div class="comment-section">
+      <h4>Comments:</h4>
+      <p><strong>Sandra:</strong> This is one of my favorites from California!</p>
+      <p><strong>Mike:</strong> Great pairing suggestion, definitely trying this!</p>
+    </div>
+  </div>
+
+</body>
+</html>
